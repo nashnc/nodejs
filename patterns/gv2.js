@@ -1,6 +1,6 @@
-var PromptSync = require("prompt-sync")();
+var prompt = require("prompt-sync")();
 
-var size = PromptSync(`enter the size \n`);
+var size = prompt(`the size of letter "G" that you want to print\n`);
 pattern = "";
 halfSize = Math.round(size / 2);
 remainder = size % 2;
