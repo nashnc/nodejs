@@ -13,3 +13,4 @@ for (i = 1; i <= limit; i++){
      table = i * number;
      console.log(` ${i} * ${number} = ${table}`);
 }
+

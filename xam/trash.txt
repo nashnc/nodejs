@@ -1,0 +1,53 @@
+// calculator.js
+
+class Calculator {
+    // Method for addition
+    add(a, b) {
+        return a + b;
+    }
+
+    // Method for subtraction
+    subtract(a, b) {
+        return a - b;
+    }
+
+    // Method for multiplication
+    multiply(a, b) {
+        return a * b;
+    }
+
+    // Method for division
+    divide(a, b) {
+        if (b === 0) {
+            throw new Error("Division by zero is not allowed.");
+        }
+        return a / b;
+    }
+}
+
+// Export the Calculator class
+module.exports = Calculator;
+
+
+// app.js
+
+const Calculator = require('./calculator');
+
+// Create an instance of the Calculator class
+const calculator = new Calculator();
+
+// Perform some operations
+const a = 10;
+const b = 5;
+
+console.log(`Addition of ${a} and ${b}: ${calculator.add(a, b)}`);
+console.log(`Subtraction of ${a} and ${b}: ${calculator.subtract(a, b)}`);
+console.log(`Multiplication of ${a} and ${b}: ${calculator.multiply(a, b)}`);
+console.log(`Division of ${a} and ${b}: ${calculator.divide(a, b)}`);
+
+// Example of division by zero
+try {
+    console.log(`Division of ${a} by 0: ${calculator.divide(a, 0)}`);
+} catch (error) {
+    console.error(error.message);
+}

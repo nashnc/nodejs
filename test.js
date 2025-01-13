@@ -1,8 +1,11 @@
-var http = require('http');
+var a = -14;
 
-var server = http.createServer(function (req, res) {
-  res.statusCode=405;
-  res.statusMessage='Not found';
-  res.end();
-});
-server.listen(8080);
+console.log(a.toString(2));
+
+b = a << 2;
+
+c = a >> 2;
+d = a >>> 2;
+console.log(b.toString(2));
+console.log(c.toString(2));
+console.log(d.toString(2));
