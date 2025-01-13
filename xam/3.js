@@ -18,12 +18,10 @@ var array = [
 var length = array.length; // get length of array
 console.log(` number of data available ${length}\n `);
 var number = prompt(`enter a number\n`); //input from user
-number > length
+number > length && number < 0
   ? console.log(
       `enter a number under the number of data available \n currently \t ${length}\t data available`
     )
-  : number < 1
-  ? console.log(`please enter a positive integer`)
   : proceed(number);
 
 function proceed(number) {
