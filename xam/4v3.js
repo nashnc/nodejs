@@ -25,7 +25,7 @@ class Calculator {
 
 console.log(
   `1 - Addition\n 2- Multipilication \n 3 - Substraction \n 4 - Division`
-);
+); //choice
 let operation = parseInt(prompt("Enter the operation number: "));
 
 if ([1, 2, 3, 4].includes(operation)) {
@@ -46,4 +46,4 @@ if ([1, 2, 3, 4].includes(operation)) {
   }
 } else {
   console.log("Please enter a valid operation  number.");
-}
+} //enter valid choixc

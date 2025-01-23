@@ -1,12 +1,18 @@
 var prompt = require("prompt-sync")();
 
-var number = prompt(` enter a positive integer`);
+var limit = prompt(` enter a positive integer`);
 pattern = "";
 
-for (i = 0; i < number; i++) {
-  for (j = 0; j <= i; j++) {
-    pattern += "* ";
+var i = 0;
+
+while (i < limit) {
+  var j = 0;
+  while (j <= i) {
+    pattern += "+ ";
+    j++;
   }
   pattern += "\n";
+  i++;
 }
+
 console.log(pattern);
